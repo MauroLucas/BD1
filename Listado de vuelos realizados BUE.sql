@@ -2,16 +2,14 @@
 #Código IATA del Aeropuerto origen, Código IATA del Aeropuerto destino, fecha hora partida,
 #fecha hora llegada y CUIL piloto que hayan partido del aeropuerto “BUE” ordenados por
 #fecha hora de partida
+select vuelo.codigo,matriculaAvion,avion.modelo,marca.nombre as marca,aeropuetoOrigen,aeropuertoDestino,fechaArrivo,fechaPartida
 
-select vuelo.codigo as CodigoVuelo,aeropuetoOrigen,aeropuertoDestino,fechaArrivo,fechaPartida,cuilPiloto
+from vuelo
 
-from vuelo 
-
-inner join avion 
-on vuelo.matriculaAvion=avion.matricula 
+inner join avion
+on avion.matricula=vuelo.matriculaAvion
 
 inner join marca
-on avion.codigoMarca=marca.codigo
+on marca.codigo=avion.codigoMarca
 
-where aeropuetoOrigen='BUE'
-order by fechaPartida asc
+where vuelo.aeropuetoOrigen='BUE'
