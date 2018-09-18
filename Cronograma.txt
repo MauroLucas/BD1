@@ -1,0 +1,15 @@
+Semana	Fecha	Actividad
+3	7/08/2018	PARO
+4	14/08/2018	
+5	21/08/2018	Stored Procedures + Funciones
+6	28/08/2018	
+7	4/09/2018	
+8	11/09/2018	Indices
+9	18/09/2018	Triggers
+10	25/09/2018	
+11	2/10/2018	Parcial
+12	9/10/2018	
+13	16/10/2018	Recuperatorio
+14	23/10/2018	Entrega trabajo
+15	30/10/2018	
+16	6/11/2018	
